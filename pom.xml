@@ -21,6 +21,7 @@
         <module>fwh-feign</module>
         <module>fwh-sentinel</module>
         <module>fwh-seata</module>
+        <module>demo-skywalking</module>
     </modules>
 
 
