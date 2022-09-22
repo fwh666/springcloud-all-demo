@@ -1,0 +1,26 @@
+server:
+  port: 8181
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: fwh-ribbon-client
+#饥饿加载模式
+#ribbon:
+#  eager-load:
+#    enabled: true
+#    clients: test-clients
+
+#每一台服务器重试的次数，不包含首次调用的那一次
+#ribbon.MaxAutoRetries=1
+
+# 重试的服务器的个数，不包含首次调用的那一台实例
+#ribbon.MaxAutoRetriesNextServer=2
+# 是否对所以的操作进行重试(True 的话 会对post put操作进行重试，存在服务幂等问 题)
+#ribbon.OkToRetryOnAllOperations=true 9
+# 建立连接超时
+#ribbon.ConnectTimeout=3000
+# 读取数据超时
+#ribbon.ReadTimeout=3000
