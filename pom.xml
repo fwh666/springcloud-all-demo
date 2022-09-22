@@ -17,6 +17,7 @@
     <modules>
         <module>fwh-nacos</module>
         <module>fwh-ribbon</module>
+        <module>fwh-feign</module>
     </modules>
 
 
