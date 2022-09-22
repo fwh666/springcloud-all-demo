@@ -19,6 +19,7 @@
         <module>fwh-nacos</module>
         <module>fwh-ribbon</module>
         <module>fwh-feign</module>
+        <module>fwh-sentinel</module>
     </modules>
 
 

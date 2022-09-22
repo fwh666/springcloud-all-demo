@@ -1,0 +1,19 @@
+server:
+  port: 8185
+spring:
+  application:
+    name: fwh-sentinel
+  cloud:
+    # 注册服务地址
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
+      # 关闭springmvc的端点保护
+      filter:
+        enabled: false
+# 监控点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
