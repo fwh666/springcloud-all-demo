@@ -1,9 +1,8 @@
 import club.fuwenhao.utils.AESUtils;
 import club.fuwenhao.utils.DateUtil;
 import club.fuwenhao.utils.Md5Util;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
-import javax.crypto.spec.SecretKeySpec;
 import java.security.NoSuchAlgorithmException;
 import java.util.Date;
 
