@@ -20,6 +20,7 @@
         <module>fwh-ribbon</module>
         <module>fwh-feign</module>
         <module>fwh-sentinel</module>
+        <module>fwh-seata</module>
     </modules>
 
 

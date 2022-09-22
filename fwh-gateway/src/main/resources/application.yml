@@ -1,0 +1,35 @@
+server:
+  port: 8010
+#nacos注册地址
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    #开启gateway从nacos上获取服务列表
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: fwh-web
+          uri: lb://fwh-web
+          predicates:
+            - Path=/web/**
+#            StripPrefix: 1
+#        - id: product_center
+#          uri: lb://product-center
+#          predicates:
+#            - Path=/product/**
+  application:
+    name: fwh-gateway
+#开启acutor端点
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
