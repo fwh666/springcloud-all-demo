@@ -1,0 +1,18 @@
+server:
+  port: 18080
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: fwh-web
+  mail:
+    host: smtp.163.com
+    username: test@163.com
+    password: test
+    default-encoding: utf-8
+logging:
+  file:
+    path: /export/Logs
+  config: classpath:logback-spring.xml
